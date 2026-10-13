@@ -5,7 +5,10 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/command")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5174",
+    "https://24eg106d34.netlify.app"
+})
 public class CommandController {
 
     private final WindowsCommandService commandService;
